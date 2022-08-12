@@ -1,0 +1,38 @@
+{% extends "admin\\base.html" %}
+	{% load bootstrap4 %}
+    {% load static %}
+    {% bootstrap_css %} 
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Giorno Giovanna') }}
+
+{% endblock %}
+
+<!--СТАЙЛЫ-->
+{% block extrastyle %}
+
+<style type="text/css">
+#btn-nav{
+	float: right;
+	margin-right: 45px;
+}
+.pending{
+	position: absolute;
+	border-radius: 50%;
+	justify-content: center;
+}
+</style>
+{% endblock %}
+
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Giorno Giovanna') }}</a></h1>
+
+{% endblock %}
+
+{% block nav-global %}
+
+<a id = "btn-nav">
+	<i></i>
+	<span>Уведомлений:   </span><span class="pending">3</span>
+</a>
+
+{% endblock %}

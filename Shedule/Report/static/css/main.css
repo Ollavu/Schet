@@ -1,0 +1,5 @@
+body{
+  background-image: url({% static "img/1.jpg"%});
+  background-size: 100hv;
+  background-attachment: fixed;
+}

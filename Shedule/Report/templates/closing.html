@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% load bootstrap4 %}
+    {% load static %}
+    {% bootstrap_css %} 
+    <link href="{% static 'css/bootstrap.min.css.map' %}" rel="stylesheet">
+
+
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+
+<body class="text-center form-signin w-100 m-auto">
+<h1>Заявка успешно {{text}}</h1>
+<input type="button" onclick="history.back();" value="Назад"/>
+
+</body>
+</html>

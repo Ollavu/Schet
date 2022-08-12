@@ -1,0 +1,21 @@
+.f{
+	width:100%;
+	height: 300px;
+	background-color: green;
+	border-width: 25px;
+	border-color: black;
+	color: red;
+}
+.ff{
+	width:100%;
+	height: 50px;
+	background-color: yellow;
+	border-width: 25px;
+	border-color: black;
+	color: red;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
